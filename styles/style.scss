@@ -1,0 +1,86 @@
+@import 'bourbon/bourbon';
+/* \$visual-grid: true; */
+@import 'neat/neat';
+
+
+$tablet: new-breakpoint(max-width 850px 8);
+$mobile: new-breakpoint(max-width 500px 4);
+
+$picton-blue: #5BA3D6;
+$lapis-lazuli: #2A6A98;
+
+$light-blue: $picton-blue;
+$dark-blue: $lapis-lazuli;
+
+$all-inputs: 'input, textarea, select';
+$all-inputs-focus: 'input:focus, textarea:focus, select:focus';
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: $light-blue;
+  color: white;
+  font-family: $helvetica;
+
+}
+
+form {
+  @include outer-container;
+}
+
+.column {
+  @include span-columns(4);
+
+  @include media($tablet) {
+    @include span-columns(4);
+    &:nth-child(2) {
+      @include omega();
+    }
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+
+  * {
+    width: 100%;
+  }
+
+  &:last-child {
+    @include media($tablet) {
+      @include span-columns(8);
+    }
+  }
+}
+
+label {
+  font-size: 11px;
+}
+
+#{$all-inputs} {
+  border: 2px solid white;
+  background: $light-blue;
+  color: white;
+  margin: 5px 0 25px 0;
+  font-size: 14px;
+  padding: 0 2%;
+  @include placeholder {
+    color: $dark-blue;
+    font-style: italic;
+  }
+
+  &:focus {
+    border: 2px solid $dark-blue;
+  }
+}
+
+input {
+  height: 40px;
+}
+
+select {
+  border: 1px solid gray;
+}
