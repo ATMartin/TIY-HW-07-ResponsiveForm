@@ -15,8 +15,16 @@
       <label for="email">EMAIL ADDRESS</label>
       <input type="email" id="email" placeholder="johnny@appleseed.org">
       <label for="country">COUNTRY</label>
-      <select id="country">
+      <select id="country" onchange="if(this.value !== 'USA!') {alert('Sorry, I think you meant USA!');}">
         <option val="" selected disabled style="display:none;">Choose a Country</option>
+        <option>USA!</option>
+        <option>USA!</option>
+        <option>USA!</option>
+        <option>USA!</option>
+        <option>USA!</option>
+        <option>USA!</option>
+        <option>USA!</option>
+        <option>USA!</option>
         <option>USA!</option>
         <option>USA!</option>
         <option>Canada</option>
@@ -55,7 +63,7 @@
       <label for="drink">FAVORITE DRINK</label>
       <input type="text" id="drink" placeholder="DRANK">
       <label for="power">SPECIAL POWER</label>
-      <input type="text" id="power" placeholder="Blowing Shit Up - with my MIND">
+      <input type="text" id="power" placeholder="Blowing Stuff Up - with my MIND">
       <label for="weapon">WEAPON OF CHOICE</label>
       <input type="text" id="weapon" placeholder="Christopher Wauken">
       <label for="comments">COMMENTS</label>

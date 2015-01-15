@@ -14,7 +14,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background: #5BA3D6;
+  background: #5ba3d6;
   color: white;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
@@ -68,25 +68,25 @@ label {
 
 input, textarea, select {
   border: 2px solid white;
-  background: #5BA3D6;
+  background: #5ba3d6;
   color: white;
   margin: 5px 0 25px 0;
   font-size: 14px;
   padding: 0 2%; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-    color: #2A6A98;
+    color: #2a6a98;
     font-style: italic; }
   input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-    color: #2A6A98;
+    color: #2a6a98;
     font-style: italic; }
   input:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
-    color: #2A6A98;
+    color: #2a6a98;
     font-style: italic; }
   input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-    color: #2A6A98;
+    color: #2a6a98;
     font-style: italic; }
   input:focus, textarea:focus, select:focus {
-    border: 2px solid #2A6A98; }
+    border: 2px solid #2a6a98; }
 
 input {
   height: 40px; }
